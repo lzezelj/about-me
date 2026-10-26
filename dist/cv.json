@@ -1,0 +1,21 @@
+{
+  "profile": {
+    "name": "Lovro Zezelj",
+    "email": "lovro.zezelj@gmail.com",
+    "location": "Rottenburg am Neckar, Germany",
+    "linkedin": "https://www.linkedin.com/in/lovro-zezelj-b6a73b388/",
+    "github": "https://github.com/lzezelj"
+  },
+  "projects": [
+    {
+      "name": "LC",
+      "url": "https://lc.lzezelj.com",
+      "stack": ["Next.js", "TypeScript", "PostgreSQL", "WebRTC", "LiveKit", "Docker"]
+    },
+    {
+      "name": "Calendar Dashboard",
+      "url": "https://calendar.lzezelj.com",
+      "stack": ["React", "TypeScript", "Node.js", "Express", "PostgreSQL", "Prisma"]
+    }
+  ]
+}

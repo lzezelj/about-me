@@ -1,0 +1,274 @@
+.cv-header {
+  display: none;
+}
+.project-source {
+  display: none;
+}
+
+.contact-icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  margin-right: 0.4em;
+  vertical-align: -0.12em;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.7;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.project-details {
+  margin: 0.9rem 0 0;
+  padding-left: 1.1rem;
+  color: var(--muted);
+  font-size: 0.9rem;
+  line-height: 1.55;
+}
+
+.project-details li + li {
+  margin-top: 0.65rem;
+}
+
+@media print {
+  :root {
+    color-scheme: light;
+    --ink: #17201e;
+    --muted: #526159;
+    --line: #bdcfc8;
+  }
+  @page {
+    size: A4;
+    margin: 14mm 16mm;
+  }
+
+  body {
+    background: white;
+    color: #17201e;
+    font-size: 10pt;
+    line-height: 1.4;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  .site-header,
+  .hero,
+  .contact-section,
+  .skip-link,
+  footer {
+    display: none;
+  }
+
+  .cv-header {
+    display: block;
+    margin-bottom: 6mm;
+    break-inside: avoid;
+    border-bottom: 0.4mm solid #bdcfc8;
+    padding: 6mm;
+    background: #edf3f0;
+    border-left: 1mm solid #234b42;
+    border-radius: 0 2mm 2mm 0;
+    display: flow-root;
+  }
+
+  .cv-portrait {
+    float: right;
+    width: 28mm;
+    height: 28mm;
+    margin: 0 0 3mm 5mm;
+    border: 0.5mm solid #bdcfc8;
+    border-radius: 2mm;
+    object-fit: cover;
+  }
+
+  .cv-header h1 {
+    color: #234b42;
+    font:
+      30pt/1.1 Georgia,
+      serif;
+    margin: 0 0 2mm;
+  }
+
+  .cv-header p {
+    margin: 2mm 0;
+  }
+
+  .cv-role {
+    color: #a54123;
+    font-weight: bold;
+    font-size: 12pt;
+  }
+
+  .cv-contact {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2mm 5mm;
+    margin-top: 3mm;
+    font-style: normal;
+    font-size: 9pt;
+    overflow-wrap: anywhere;
+  }
+
+  .cv-contact a {
+    color: #234b42;
+    text-decoration: none;
+  }
+
+  .cv-contact > * {
+    max-width: 100%;
+  }
+
+  .cv-contact .contact-icon {
+    width: 3.5mm;
+    height: 3.5mm;
+    color: #234b42;
+  }
+
+  .section {
+    display: block;
+    max-width: none;
+    padding: 4mm 0;
+    break-inside: auto;
+    border-top: 0;
+  }
+
+  .section-number {
+    display: none;
+  }
+
+  .section-intro {
+    break-after: avoid;
+    margin-bottom: 3mm;
+    padding: 2mm 3mm;
+    background: #edf3f0;
+    border-left: 1mm solid #a54123;
+    border-bottom: 0.3mm solid #bdcfc8;
+  }
+
+  .section-intro h2 {
+    color: #234b42;
+    font:
+      bold 15pt/1.15 Arial,
+      sans-serif;
+    letter-spacing: normal;
+  }
+
+  .project-grid,
+  .skill-groups {
+    display: block;
+  }
+
+  .project {
+    display: block;
+    min-height: 0;
+    padding: 0 0 3mm;
+    border: 0;
+    break-inside: avoid;
+    border-bottom: 0.25mm solid #d6dfda;
+    margin-bottom: 3mm;
+  }
+
+  .project-kicker {
+    display: none;
+  }
+
+  .project h3 {
+    color: #234b42;
+    font:
+      bold 11pt/1.2 Arial,
+      sans-serif;
+    margin: 0 0 1mm;
+  }
+
+  .project p,
+  .timeline p,
+  .skill-group p {
+    font-size: 9.5pt;
+    color: #333;
+  }
+
+  .project-details {
+    margin-top: 2mm;
+    padding-left: 4mm;
+    font-size: 9.5pt;
+    line-height: 1.4;
+    color: #333;
+  }
+
+  .project-details li + li {
+    margin-top: 1.5mm;
+  }
+
+  .project-link,
+  .project-source {
+    display: inline-block;
+    margin-top: 1mm;
+    margin-right: 4mm;
+    color: #234b42;
+    font-size: 9pt;
+    text-decoration: underline;
+    text-underline-offset: 2px;
+  }
+
+  .project-url {
+    display: inline;
+    margin-left: 2mm;
+  }
+
+  .demo-request {
+    display: none;
+  }
+
+  .demo-notice {
+    margin: 1mm 0 0;
+    font-size: 9pt;
+    color: #526159;
+  }
+
+  .tags {
+    margin-top: 1.5mm;
+    gap: 1mm 2mm;
+  }
+
+  .tag {
+    border: 0.2mm solid #bdcfc8;
+    border-radius: 1mm;
+    color: #234b42;
+    background: #edf3f0;
+    padding: 0.5mm 1.5mm;
+    font-size: 8.5pt;
+  }
+
+  .timeline {
+    border-top: 0;
+  }
+
+  .timeline-item {
+    display: grid;
+    grid-template-columns: 33mm 1fr;
+    gap: 4mm;
+    padding: 2mm 0;
+    break-inside: avoid;
+  }
+
+  .timeline h3 {
+    color: #234b42;
+    font-size: 10pt;
+  }
+
+  .timeline p {
+    margin-top: 1mm;
+  }
+
+  .skill-group {
+    padding: 1.5mm 0;
+    border: 0;
+    break-inside: avoid;
+  }
+
+  .skill-group h3 {
+    color: #a54123;
+    font-size: 9pt;
+    margin-bottom: 1mm;
+  }
+}

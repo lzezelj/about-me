@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Portfolio and CV of Lovro Zezelj, a junior full-stack developer."
+    />
+    <title>Lovro Zezelj — Full-stack developer</title>
+    <link rel="stylesheet" href="/styles.css" />
+    <link rel="stylesheet" href="/cv.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="Lovro Zezelj home">LZ<span>.</span></a>
+      <nav aria-label="Primary navigation">
+        <a href="#projects" data-i18n="navProjects">Projects</a>
+        <a href="#experience" data-i18n="navExperience">Experience</a>
+        <a href="#education" data-i18n="navEducation">Education</a>
+        <a href="#contact" data-i18n="navContact">Contact</a>
+      </nav>
+      <button
+        class="language-switch"
+        id="language-switch"
+        type="button"
+        aria-label="English selected; switch to German"
+      >
+        EN
+      </button>
+    </header>
+
+    <main id="main">
+      <header class="cv-header">
+        <img class="cv-portrait" src="/portrait.jpg" alt="Lovro Zezelj" width="214" height="214" />
+        <h1>Lovro Zezelj</h1>
+        <p class="cv-role" data-i18n="cvRole">Junior full-stack developer</p>
+        <p data-i18n="heroText">
+          Computer-science graduate focused on thoughtful, reliable web applications—from user
+          interface to deployment.
+        </p>
+        <address class="cv-contact">
+          <span>Rottenburg am Neckar</span>
+          <span data-contact-icon="birthday"
+            ><span data-i18n="birthday">Born 9 September 2000</span></span
+          >
+          <a href="mailto:lovro.zezelj@gmail.com">lovro.zezelj@gmail.com</a>
+          <a href="https://lzezelj.com">lzezelj.com</a>
+          <a href="https://github.com/lzezelj">github.com/lzezelj</a>
+          <a href="https://www.linkedin.com/in/lovro-zezelj-b6a73b388/"
+            >linkedin.com/in/lovro-zezelj-b6a73b388</a
+          >
+        </address>
+      </header>
+      <section class="hero" id="top">
+        <div class="hero-copy">
+          <p class="eyebrow" data-i18n="eyebrow">FULL-STACK DEVELOPER · TÜBINGEN REGION</p>
+          <h1 data-i18n="heroTitle">Full-stack development, from idea to deployment.</h1>
+          <p class="lede" data-i18n="heroText">
+            Computer-science graduate focused on thoughtful, reliable web applications—from user
+            interface to deployment.
+          </p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#projects" data-i18n="viewProjects"
+              >View projects</a
+            >
+            <div class="cv-dropdown" id="cv-dropdown">
+              <button
+                class="button button-secondary"
+                id="download-cv"
+                type="button"
+                aria-expanded="false"
+                aria-controls="cv-language-options"
+              >
+                <span data-i18n="downloadCv">Print / save CV</span>
+                <span aria-hidden="true">▾</span>
+              </button>
+              <div class="cv-language-options" id="cv-language-options" hidden>
+                <button type="button" data-cv-language="en" lang="en">English</button>
+                <button type="button" data-cv-language="de" lang="de">German</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <aside class="hero-card" aria-label="Developer profile">
+          <p class="card-label" data-i18n="currently">CURRENTLY</p>
+          <p class="card-title" data-i18n="currentText">Learning through my own projects.</p>
+          <div class="code-lines" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+          <p class="availability" data-i18n="availability">
+            Open to software-development opportunities.
+          </p>
+        </aside>
+      </section>
+
+      <section class="section projects" id="projects">
+        <div class="section-intro">
+          <h2 data-i18n="projectsTitle">Selected projects</h2>
+        </div>
+        <div class="project-grid" id="project-grid"></div>
+        <p class="demo-notice" data-i18n="demoNotice">
+          Both projects require an account. Demo accounts are available on request — email me and I
+          can create access for you.
+        </p>
+      </section>
+
+      <section class="section split" id="experience">
+        <div class="section-intro">
+          <h2 data-i18n="experienceTitle">Experience</h2>
+        </div>
+        <div class="timeline" id="experience-list"></div>
+      </section>
+
+      <section class="section split" id="education">
+        <div class="section-intro">
+          <h2 data-i18n="educationTitle">Education</h2>
+        </div>
+        <div class="timeline" id="education-list"></div>
+      </section>
+
+      <section class="section skills-section">
+        <div class="section-intro">
+          <h2 data-i18n="skillsTitle">Toolkit</h2>
+        </div>
+        <div class="skill-groups" id="skills-list"></div>
+      </section>
+
+      <section class="contact-section" id="contact">
+        <a class="email-link" href="mailto:lovro.zezelj@gmail.com"
+          >lovro.zezelj@gmail.com <span>↗</span></a
+        >
+        <div class="contact-links">
+          <a
+            href="https://www.linkedin.com/in/lovro-zezelj-b6a73b388/"
+            target="_blank"
+            rel="noreferrer"
+            >LinkedIn</a
+          ><a href="https://github.com/lzezelj" target="_blank" rel="noreferrer">GitHub</a>
+        </div>
+      </section>
+    </main>
+    <footer>
+      © <span id="year"></span> Lovro Zezelj <span aria-hidden="true">·</span>
+      <span data-i18n="footer">Designed and built with care.</span>
+    </footer>
+    <script src="/app.js" defer></script>
+  </body>
+</html>
