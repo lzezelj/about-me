@@ -118,7 +118,7 @@ const cv = {
     contactTitle: 'Interesse an einer Zusammenarbeit?',
     footer: 'Mit Sorgfalt gestaltet und entwickelt.',
     demoNotice:
-      'Beide Projekte erfordern ein Konto. Demo-Konten sind auf Anfrage verfügbar — schreiben Sie mir, und ich richte Ihnen einen Zugang ein.',
+      'Beide Projekte erfordern ein Konto. Demo-Konten sind auf Anfrage verfügbar — schreiben Sie mir, und ich richte Ihnen einen Demo-Konto ein.',
     requestDemo: 'Demo-Zugang anfragen',
     visitProject: 'Website ansehen',
     sourceCode: 'Quellcode ansehen',
