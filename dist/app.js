@@ -210,10 +210,10 @@ cv.de.skills.push([
 let lang = localStorage.getItem('cv-language') === 'de' ? 'de' : 'en';
 const projects = [
   [
-    'LC',
-    'https://lc.lzezelj.com',
+    'LZRelay',
+    'https://lzrelay.lzezelj.com',
     ['Next.js', 'TypeScript', 'PostgreSQL', 'WebRTC', 'LiveKit', 'Docker'],
-    'https://github.com/lzezelj/lc',
+    'https://github.com/lzezelj/LZRelay',
   ],
   [
     'Calendar Dashboard',

@@ -8,8 +8,8 @@
   },
   "projects": [
     {
-      "name": "LC",
-      "url": "https://lc.lzezelj.com",
+      "name": "LZRelay",
+      "url": "https://lzrelay.lzezelj.com",
       "stack": ["Next.js", "TypeScript", "PostgreSQL", "WebRTC", "LiveKit", "Docker"]
     },
     {
