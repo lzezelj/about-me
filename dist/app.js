@@ -22,7 +22,7 @@ const cv = {
     contactTitle: 'Interested in working together?',
     footer: 'Designed and built with care.',
     demoNotice:
-      'Both projects require an account. Demo accounts are available on request — email me and I can create access for you.',
+      'Both projects require an account. Demo accounts are available on request — email me and I can create a demo account for you.',
     requestDemo: 'Request demo access',
     visitProject: 'Visit website',
     sourceCode: 'Visit source code',
